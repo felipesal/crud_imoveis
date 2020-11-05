@@ -23,7 +23,7 @@ class CreateImovelsTable extends Migration
             $table->string('cidade');
             $table->float('preco');
             $table->integer('qtdQuartos');
-            $table->enum('tipo', ['apto', 'casa', 'kitnet']);
+            $table->enum('tipo', ['apartamento', 'casa', 'kitnet']);
             $table->enum('finalidade', ['venda', 'aluguel']);
             $table->timestamps();
         });
